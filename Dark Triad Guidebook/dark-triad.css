@@ -1,0 +1,109 @@
+#thrifted-guide {
+  --main-font: Verdana, "Verdana Ref", sans-serif;
+  --second-font: Impact, "Arial Black", sans-serif;
+  --text-colour: #aaaa;
+  --accent-colour: #a22c29;
+  --border-colour: #222222;
+}
+#thrifted-guide {
+  width: 85%;
+  max-width: 1000px;
+  margin: 0px auto;
+  display: flex;
+  flex-wrap: wrap;
+  font: 0.9rem var(--main-font);
+  color: var(--text-colour);
+  border: 1px solid var(--border-colour);
+}
+
+#thrifted-guide b, #thrifted-guide a, thrifted-guide label {
+  color: var(--accent-colour);
+  font: 0.9rem var(--second-font);
+  font-variant: small-caps;
+  letter-spacing: 2px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.5s all ease-in-out;
+}
+#thrifted-guide a:hover, #thrifted-guide label:hover {
+  color: var(--text-colour);
+  transition: 0.5s all ease-in-out;
+}
+
+#thrifted-guide h1 {
+  color: var(--accent-colour);
+  font: 1.1rem var(--second-font);
+  font-variant: small-caps;
+  letter-spacing: 2px;
+  border-bottom: 1px solid var(--border-colour);
+  padding-bottom: 5px;
+  margin: 0px 0px 10px 0px;
+}
+#thrifted-guide #main h2 {
+  color: var(--accent-colour);
+  font: 2rem var(--second-font);
+  font-variant: small-caps;
+  letter-spacing: 2px;
+  border-bottom: 1px solid var(--border-colour);
+  padding-bottom: 5px;
+  margin: 0px 0px 5px 0px;
+  text-align: right;
+}
+#thrifted-guide h3 {
+  margin: 0;
+  font: 1.1rem var(--second-font);
+  font-variant: small-caps;
+  border-bottom: 1px solid var(--border-colour);
+  padding-bottom: 5px;
+}
+
+.guide-content, .guide-radio { display: none; }
+.guide-radio:checked + .guide-content { display: block; }
+
+#thrifted-guide #top {
+  background: #101010;
+  border-bottom: 1px solid var(--border-colour);
+  padding: 40px;
+  flex-basis: 100%;
+  margin: 0px;
+  font-variant: small-caps;
+}
+
+#thrifted-guide #nav {
+  background: #121212;
+  padding: 20px;
+  flex: 0 0 auto;
+  width: 25%;
+  box-sizing: border-box;
+}
+
+#thrifted-guide #nav a, #thrifted-guide #nav label {
+  padding-bottom: 10px;
+  display: block;
+  margin: 5px 0 5px 10px;
+}
+
+#thrifted-guide #nav a:hover, #thrifted-guide #nav label:hover {
+  color: var(--text-colour);
+  padding-left: 10px;
+  margin: 5px -10px 5px 10px;
+}
+
+#thrifted-guide #main {
+  flex: 0 0 auto;
+  background: #161616;
+  padding: 20px;
+  width: 75%;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 800px) {
+  #thrifted-guide { width: 800px; }
+  #thrifted-guide #nav { width: 100%; }
+  #thrifted-guide #nav a, #thrifted-guide #nav label {
+    display: inline-block;
+    width: 20%;
+    margin: 0px;
+  }
+  #thrifted-guide #main { width: 100%; }
+}
